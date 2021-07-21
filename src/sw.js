@@ -1,5 +1,5 @@
-var CACHE_NAME = "cache-v2"
-var urlsToCache = [
+const CACHE_NAME = "cache-v2"
+const urlsToCache = [
     "/",
     "/index.js",
     "index.css",
