@@ -67,8 +67,8 @@ const eleBest = document.getElementById("best");
 const eleAverage = document.getElementById("average");
 const eleWorst = document.getElementById("worst");
 
-
-const onSubmit = () => {
+/* exported onSubmit */
+const onSubmit = () => { 
     const lv = parseInt(eleLV.value);
     const weapon = eleWeapon.value as Weapon;
     const defense = parseInt(eleDefense.value);
