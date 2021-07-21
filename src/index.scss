@@ -1,0 +1,53 @@
+body {
+    font-family: "Roboto", sans-serif; 
+    font-size: 16px;
+    margin: 0 0;
+}
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+.inputForm {
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    align-items: center;
+    border-radius: 1em;
+    border: 1px solid black;
+    padding: 0.75em 1em;
+
+    input, select {
+        padding: 0.5em;
+        margin: 0.25em 0;
+    }
+
+    input[type=submit] {
+        grid-column: 2;
+    }
+}
+.output {
+    border-radius: 1em;
+    border: 1px solid black;
+    padding: 1em;
+}
+h1,h2,p {
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: white;
+    }
+
+    .inputForm, .output {
+        border-color: white;
+
+        input:not([type="submit"]), select {
+            border-color: white;
+            color: white ;
+            background-color: #333;
+        }
+    }
+
+}
