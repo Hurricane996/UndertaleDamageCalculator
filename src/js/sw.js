@@ -1,8 +1,8 @@
-const CACHE_NAME = "cache-v2"
+const CACHE_NAME = "cache-v3"
 const urlsToCache = [
     "/",
-    "/index.js",
-    "index.css",
+    "js/index.js",
+    "css/index.css",
     "favicon-196.png",
     "apple-icon-180.png",
     "manifest-icon-192.png",
