@@ -7,17 +7,17 @@
         <meta name="description" content="A weapons damage calculator for Undertale">
         <meta name="theme-color" content="#000000">
         <title>Undertale Weapons Calculator</title>
-        <link rel="stylesheet" href="css/index.css"/>
-        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="css/index.scss"/>
+        <link rel="manifest" href="./manifest.json">
+        <link rel="icon" href="./icon.svg">
     </head>
     <body>
         <div class="container">
             <div class="topbar">
-                <h1><b> THIS CALCULATOR DOES NOT WORK. I'm working on fixing it but as of now it WILL give you the wrong answer.</b></h1>
                 <h1>Undertale Damage Calculator</h1>
-                <a href="https://github.com/Hurricane996/UndertaleDamageCalculator"><img src="githubLogo.svg" class="githubLogo"/></a>
+                <a href="https://github.com/Hurricane996/UndertaleDamageCalculator"><img src="img/githubLogo.svg" alt="Project GitHub" class="githubLogo"/></a>
             </div>
-            <form class="inputForm" onsubmit="onSubmit(); return false">
+            <form class="inputForm" id="inputForm">
                 <label for="weapon">Weapon: </label>
                 <select name="weapon" id="weapon">
                     <option value="stick">Stick</option>
@@ -46,7 +46,6 @@
                 <p>Worst: <span id="worst"></span></p>
             </div>
         </div>
-        <script src="js/index.js"></script>
-        <script src="js/registerServiceWorker.js"></script>
+        <script src="js/index.ts" type="module"></script>
     </body>
 </html>
