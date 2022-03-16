@@ -19,8 +19,9 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html --public-url \".\"",
     "clean": "rm -r dist",
+    "cleanBuild": "yarn clean && yarn build",
     "tsc": "tsc --noEmit",
     "lint": "eslint",
-    "verify": "yarn build && yarn tsc && yarn lint"
+    "verify": "yarn cleanBuild && yarn tsc && yarn lint"
   }
 }
